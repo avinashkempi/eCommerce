@@ -9,7 +9,7 @@ function Home() {
     <section id='home' className=''>
       <div className='homeContainer container my-4'>
         <h1 className='homeContent'>
-          Hello! Welcome to <span className='name'>E-Kart</span>
+          Hello! Welcome to <span className='name'>E-Commerce</span>
         </h1>
       </div>
       <div className='view-change'><input onClick={handleClick} type='checkbox' /> <span>LIST VIEW</span></div>
