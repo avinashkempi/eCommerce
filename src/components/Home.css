@@ -1,0 +1,41 @@
+.profilePic {
+  max-width: 50%;
+}
+
+.homeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.homeContent {
+  flex: 1;
+  color: orange;
+}
+
+.name {
+  font-size: 60px;
+  color: cadetblue;
+}
+
+#home {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px 70px;
+}
+
+.product-heading {
+  font-size: 50px;
+  color: cadetblue;
+  text-align: center;
+}
+
+.view-change input {
+  width: 20px;
+  height: 20px;
+}
+
+.view-change {
+  font-size: 30px;
+  text-align: center;
+  color: orange;
+}

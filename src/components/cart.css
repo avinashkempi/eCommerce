@@ -1,0 +1,90 @@
+.product-list .pcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.product-list .card-details {
+  display: inline-block;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.product-list .card-content .btn {
+  display: block;
+  margin: 20px 0;
+}
+
+.product-list .card-description {
+  margin-top: 20px;
+}
+
+.cart {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.cart .product-list .pcard img {
+  max-width: 100px;
+}
+
+.cart .product-list {
+  flex: 1;
+}
+
+.heading {
+  font-size: 60px;
+  color: cadetblue;
+}
+
+.customer-details label {
+  margin-top: 10px;
+  font-size: 20px;
+  color: goldenrod;
+}
+
+.customer-details input {
+  font-size: 20px;
+  color: grey;
+  height: 40px;
+}
+
+.card-content input {
+  max-width: 100px;
+}
+
+.order {
+  margin-top: 20px;
+  min-width: 100px;
+}
+
+.addressSection {
+  flex: 1;
+}
+
+.savedAddress {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 45%;
+}
+
+.savedAddress p {
+  margin-bottom: 5px;
+}
+
+.saveAddressList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+textarea {
+  font-size: 20px;
+  color: grey;
+}

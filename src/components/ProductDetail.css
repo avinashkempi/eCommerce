@@ -1,0 +1,26 @@
+.product-list .pcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px;
+  border: 1px solid grey;
+}
+
+.product-list .pcard img {
+  max-width: 300px;
+}
+
+.product-list .card-details {
+  display: inline-block;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.product-list .card-content .btn {
+  display: block;
+  margin: 20px 0;
+}
+
+.product-list .card-description {
+  margin-top: 20px;
+}
