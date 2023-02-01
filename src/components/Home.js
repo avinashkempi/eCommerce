@@ -1,4 +1,4 @@
-import './Home.css';
+import './Home.scss';
 import * as React from 'react';
 import Product from './product';
 

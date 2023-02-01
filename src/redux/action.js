@@ -6,28 +6,28 @@ export const ADD_ADDRESS = 'ADD_ADDRESS';
 
 export function AddCart(payload) {
     return {
-        type: 'ADD_CART',
+        type: ADD_CART,
         payload
     }
 }
 
 export function DeleteCart(payload) {
     return {
-        type: 'DELETE_CART',
+        type: DELETE_CART,
         payload
     }
 }
 
 export function QuantityChange(payload) {
     return {
-        type: 'QUANTITY_CHANGE',
+        type: QUANTITY_CHANGE,
         payload
     }
 }
 
 export function AddAddress(payload) {
     return {
-        type: 'ADD_ADDRESS',
+        type: ADD_ADDRESS,
         payload
     }
 }

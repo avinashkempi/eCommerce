@@ -1,0 +1,102 @@
+.cart {
+  .product-list {
+    .pcard {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      box-shadow: 3px 3px 10px rgb(0 0 0 / 0.25);
+      padding: 20px;
+    }
+
+    .card-details {
+      display: inline-block;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+
+    .card-content {
+      .btn {
+        display: block;
+        margin: 20px 0;
+        background-color: #762A91;
+        color: white;
+      }
+    }
+
+    .card-description {
+      margin-top: 20px;
+    }
+  }
+
+  display: flex;
+  padding-bottom: 100px;
+
+  .product-list {
+    flex: 1;
+
+    .pcard {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 60px;
+    color: cadetblue;
+  }
+
+  .customer-details {
+    label {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #EC0087;
+    }
+
+    input,
+    textarea {
+      min-width: 250px;
+    }
+  }
+
+  .card-content {
+    input {
+      max-width: 100px;
+    }
+  }
+
+  .addressSection {
+    flex: 1;
+  }
+
+  .savedAddress {
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 0.25);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  .saveAddressList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .bi-trash {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+
+    &::before {
+      color: #EC0087;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import "./ProductDetail.css";
+import "./ProductDetail.scss";
 import { useParams, Link } from "react-router-dom";
 import * as React from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -37,7 +37,7 @@ const ProductDetail = () => {
               }}
             />
             <div className="card-action">
-              <Link className="btn btn-info" to={`/cart`} onClick={() => { dispatch(AddCart(productSelected)) }}>Proceed to cart</Link>
+              <Link className="btn" to={`/cart`} onClick={() => { dispatch(AddCart(productSelected)) }}>Proceed to cart</Link>
             </div>
           </div>
         </div>

@@ -9,12 +9,12 @@
 
 .homeContent {
   flex: 1;
-  color: orange;
+  color: #762A91;
 }
 
 .name {
   font-size: 60px;
-  color: cadetblue;
+  color: #EC0087;
 }
 
 #home {
@@ -25,17 +25,17 @@
 
 .product-heading {
   font-size: 50px;
-  color: cadetblue;
+  color: #EC0087;
   text-align: center;
-}
-
-.view-change input {
-  width: 20px;
-  height: 20px;
 }
 
 .view-change {
   font-size: 30px;
   text-align: center;
-  color: orange;
+  color: #762A91;
+
+  input {
+    min-width: 20px;
+    min-height: 20px;
+  }
 }

@@ -1,4 +1,4 @@
-import "./cart.css";
+import "./cart.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -58,7 +58,7 @@ function Cart() {
                 );
               })}
             </div>
-            <button className={!showAddAddress ? "order btn btn-primary" : "d-none"} onClick={() => { setShowAddAddress(true); }}>Add New Address</button>
+            <button className={!showAddAddress ? "order btn" : "d-none"} onClick={() => { setShowAddAddress(true); }}>Add New Address</button>
           </div>
           <div className={showAddAddress ? "customer-details" : "d-none"}>
             <label className="address"> Address</label>
@@ -67,9 +67,9 @@ function Cart() {
             <input className="d-block" type="text" value={userDetails.name} onChange={(e) => { handleUserChange(e, "name"); }}></input>
             <label className="phNumber">Phone Number</label>
             <input className="d-block" type="text" value={userDetails.number} onChange={(e) => { handleUserChange(e, "number"); }}></input>
-            <button className="order btn btn-primary" onClick={() => { dispatch(AddAddress(userDetails)); setShowAddAddress(false) }}>Save Address</button>
+            <button className="order btn" onClick={() => { dispatch(AddAddress(userDetails)); setShowAddAddress(false) }}>Save Address</button>
             <Link to={"/thank-you"}>
-              <button className="order btn btn-primary mx-3" onClick={() => { dispatch(AddAddress(userDetails)) }}>Order</button>
+              <button className="order btn" onClick={() => { dispatch(AddAddress(userDetails)) }}>Order</button>
             </Link>
           </div>
         </div>
@@ -85,13 +85,15 @@ function Cart() {
                   </div>
                   <div className="card-content">
                     <p> ₹ {product.price}</p>
-                    <input type="number" name="number" min={1} value={product.quantity}
-                      onChange={(e) => {
-                        dispatch(QuantityChange({ id: product.id, value: Number(e.target.value) }));
-                        calculateTotal();
-                      }}
-                    />
-                    <i role="button" className="bi bi-trash mx-2 position-absolute" onClick={() => { dispatch(DeleteCart(product)) }}></i>
+                    <div className="position-relative">
+                      <input type="number" name="number" min={1} value={product.quantity}
+                        onChange={(e) => {
+                          dispatch(QuantityChange({ id: product.id, value: Number(e.target.value) }));
+                          calculateTotal();
+                        }}
+                      />
+                      <i role="button" className="bi bi-trash mx-2" onClick={() => { dispatch(DeleteCart(product)) }}></i>
+                    </div>
                     <p className="mt-3"> Total amount: ₹{product.price * product.quantity}</p>
                   </div>
                 </div>

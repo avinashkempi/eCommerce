@@ -1,4 +1,3 @@
-import './Home.css';
 import * as React from 'react';
 
 function ThankYou() {
